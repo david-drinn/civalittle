@@ -241,8 +241,6 @@ app.post('/', upload.array(), async(req, response) => {
   playerSlowestId = config.playerMapping[playerSlowest];
   if (playerSlowest == player) {
     playerSlowest = "you";
-  } else if (playerSlowestId) { // Mention the slowest player as well. (Penalty? Or should I take this out? :) )
-    playerSlowest = '<@' + playerSlowestId + '>';
   }
 
 
